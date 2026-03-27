@@ -24,10 +24,11 @@
     --tamaño: 16px;
 }
 
-@media (min-width:300px) and (max-width: 468px) {
+@media (min-width:300px) and (max-width: 767px) {
 
     /** Estilo del cuerpo de la receta **/
     .card-receta {
+        background-color: var(--white);
         margin: 0px;
         width: 100%;
     }
@@ -39,5 +40,16 @@
         margin: 0px;
         width: 100%;
     }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px)  {
+
+    /** Estilo del cuerpo de la receta **/
+.card-receta {
+    background-color: var(--white);
+    height: auto;
+    width: 75%;
+}
 
 }
