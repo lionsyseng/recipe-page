@@ -1,0 +1,187 @@
+/** Importación de api de Google Fonts **/
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/** Declaración de Constantes **/
+:root {
+
+    /** Colores **/
+    --white: hsl(0, 0%, 100%);
+    --stone--100: hsl(30, 54%, 90%);
+    --stone--150: hsl(30, 18%, 87%);
+    --stone--600: hsl(30, 10%, 34%);
+    --stone--900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+
+    /** Fuentes **/
+    --fuente-1: "Young Serif", serif;
+    --fuente-2: "Outfit", sans-serif;
+
+    /** Pesos **/
+    --peso-400: 400;
+    --peso-600: 600;
+    --peso-700: 700;
+
+    /** Tamaño fuente **/
+    --tamaño: 16px;
+}
+
+/** Estilo del cuerpo de la página **/
+body {
+    align-items: center;
+    background-color: var(--stone--100);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;    
+    margin: 0;
+    padding: 0;
+}
+
+/** Estilo del cuerpo de la receta **/
+.card-receta {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+    width: 50%;
+}
+
+/** Estilo Foto de receta **/
+.foto-receta {
+    border-radius: 15px;
+    height: auto;
+    margin: 30px 30px 20px 30px;
+    width: 90%;
+}
+
+/** Estilo del título de la receta **/
+.titulo {
+    font-family: var(--fuente-1);
+    font-weight: var(--peso-400);
+    margin: 0 30px;
+    text-align: left;
+    width: 90%;
+}
+
+/** Estilo de la descripción de la receta **/
+.descripcion {
+    font-family: var(--fuente-2);
+    font-size: var(--tamaño);
+    font-weight: var(--peso-400);
+    margin: 15px 30px;
+    text-align: left;
+}
+
+/** Estilo del contenedor del tiempo de preparación **/
+.cont-tiempos {
+    background-color: var(--stone--150);
+    border-radius: 10px;
+    max-width: 95%;
+    margin: 0px 30px;
+}
+
+/** Estilo del subtitulo-3 **/
+.subtitulo-3 {
+    color: var(--rose-800);
+    font-family: var(--fuente-2);
+    font-weight: var(--peso-600);
+    text-align: left;
+    padding-top: 15px;
+    margin: 0px 25px 0px 35px;
+}
+
+/** Estilo de las listas **/
+.lista {
+    margin: 10px 30px;
+    padding-bottom: 20px;
+}
+
+/** Estilo del color de la viñeta **/
+.lista ::marker {
+    color: var(--brown-800);
+}
+
+/** Estilo de los items de las listas **/
+.lista .list-item {
+    font-family: var(--fuente-2);
+    font-size: var(--tamaño);
+    font-weight: var(--peso-400);
+    padding-top: 10px;
+    padding-bottom: 0px;
+    text-align: left;
+}
+
+.card-receta .lista .list-item p {
+    margin: 10px;    
+}
+
+/** Estilo del subtítulo-2 **/
+.subtitulo-2 {
+    font-family: var(--fuente-1);
+    font-weight: var(--peso-700);
+    color: var(--brown-800);
+    margin: 25px 30px 0px 30px;
+    text-align: left;
+}
+
+/** Estilo de línea divisora **/
+hr {
+    border-style: none;
+    width: 90%;
+    border-bottom: 1px solid #0000003a;
+}
+
+/** Estilo del contenedor para la tabla **/
+.cont-table {
+    margin: 30px auto;
+    width: 100%;
+}
+
+/** Estilo de la tabla **/
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    text-align: left;
+    width: 90%;
+}
+
+/** Estilo de los nombres de las calorías **/
+table tr .calorias {
+    font-family: var(--fuente-2);
+    font-size: var(--tamaño);
+    font-weight: var(--peso-400);
+    padding-left: 40px;
+    width: 50%;
+}
+
+/** Estilo de los pesos de las calorías **/
+table tr .pesos {
+    color: var(--brown-800);
+    font-family: var(--fuente-2);
+    font-size: var(--tamaño);
+    font-weight: var(--peso-600);
+    height: 40px;
+    width: 50%;
+}
+
+/** Estilo de líneas de separación de la tabla **/
+table tr:not(:last-child) td {
+    border-bottom: 1px solid #0000003a;
+}
+
+/* Estilos del footer */
+.cont-attribution {
+    color: var(--rose-800);
+    font-size: 12px; 
+    margin: 25px auto;
+    text-align: center;
+    width: 90%;
+}
+
+.cont-attribution a {
+    color: var(--rose-800);
+    text-decoration: none;
+}
